@@ -1,0 +1,49 @@
+username='kartheek'
+password='kartheek214'
+
+c_name=input("plese enter your name:")
+c_pass=str(input("plese enter tour password:"))
+
+if c_name==username and c_pass==password:
+    print(
+        '''
+    1.deposite
+    2.withdrawal
+    3.mini statment
+    4.exit
+    '''
+    )
+    amount=50000
+    option=int(input("plese select your option:"))
+    if option==1:
+        dep=int(input("plese enter your amount:"))
+        amount+=dep
+        print("total amount:",amount)
+    elif option==2:
+        withd=int(input("plese enter your amount:"))
+        amount-=withd
+        print("total amount:",amount)
+    elif option==3:
+        print("=======ATM=======")
+        print("username:",username)
+        print("total amount:",amount)
+        print("THANKS FOR VISITING")
+        print("=================")
+    elif option==4:
+        exit()
+else:
+    print("your enter wrong option , plese check...")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
